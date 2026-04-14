@@ -13,13 +13,11 @@ body {
   color: #333;
   line-height: 1.8;
 }
+
 /* Headings */
 h1 { font-size: 48px; }
-
 h2 { font-size: 32px; }
-
 h3 { font-size: 24px; }
-
 h4 { font-size: 20px; }
 
 /* Container */
@@ -97,7 +95,6 @@ h2 {
   box-shadow: 0 5px 15px rgba(184,138,74,0.3);
 }
 
-/* 👇 حل مشكلة خط الـ a */
 a.btn {
   text-decoration: none;
   display: inline-block;
@@ -166,10 +163,10 @@ a.btn {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(2, minmax(200px, 1fr)); /* 👈 أصغر */
-  gap: 15px; /* مسافة أقل */
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  gap: 15px;
   margin: 40px auto;
-  max-width: 800px; /* 👈 مهم جدًا لتصغير العرض */
+  max-width: 800px;
 }
 
 .card {
@@ -254,7 +251,6 @@ a.btn {
   transform: translateY(-5px) scale(1.1);
 }
 
-/* Hover colors */
 .social a:nth-child(1):hover {
   background: #25D366;
 }
@@ -274,13 +270,15 @@ a.btn {
   font-size: 13px;
 }
 
-/* Animation */
+/* ================= ANIMATION FIXED ================= */
+/* ❌ مفيش إخفاء للصفحة */
 .fade-up {
-  opacity: 0;
-  transform: translateY(40px);
+  opacity: 1;
+  transform: translateY(0);
   transition: 0.8s ease;
 }
 
+/* الحركة فقط */
 .fade-up.show {
   opacity: 1;
   transform: translateY(0);
